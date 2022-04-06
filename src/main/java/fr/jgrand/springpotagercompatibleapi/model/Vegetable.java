@@ -99,13 +99,13 @@ public class Vegetable {
         return enemyVegetables;
     }
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    @JsonProperty(access = JsonProperty.Access)
     @JsonGetter("friendVegetables")
     public List<String> getFriendVegetablesString() {
         return friendVegetables.stream().map(Vegetable::getName).collect(Collectors.toList());
     }
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    @JsonProperty(access = JsonProperty.Access)
     @JsonGetter("enemyVegetables")
     public List<String> getEnemyVegetablesString() {
         return enemyVegetables.stream().map(Vegetable::getName).collect(Collectors.toList());
