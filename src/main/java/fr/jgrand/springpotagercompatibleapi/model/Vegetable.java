@@ -98,7 +98,7 @@ public class Vegetable {
     public Set<Vegetable> getEnemyVegetables() {
         return enemyVegetables;
     }
-
+    
     @JsonProperty(access = JsonProperty.Access)
     @JsonGetter("friendVegetables")
     public List<String> getFriendVegetablesString() {
